@@ -1,0 +1,32 @@
+Jean - Landing Page Template = Documentation
+
+Getting Started
+
+Thanks for buying  our theme. 
+We put a lot of work into our designs, 
+and our adobe Muse themes are no exception. 
+Our team spends days making sure that every little deal is perfect. 
+We wrote a short guide to get you started with your new Muse Theme, 
+but if you have any problems just mail me : master002@live.in
+
+Luckily everything in Muse is pretty simple -
+ to start just go into your downloaded folder Called 
+“Jean - Landing Page Template” and open the file called “Jean.muse” 
+(this will open straight into Adobe Muse.) We included some other files too, 
+which you can find in the “assets” folder. Once you’re inside that folder 
+you’ll find a lot more folders with names matching what’s inside them.
+Once you get Muse opened you’ll want to head over to the “Design” tab - 
+Then Open the “Home” page. In “Design” you can edit all of the bits you 
+see once the site has been published.
+
+PS. To be able to edit everything on the page you should 
+right-click and select “Unlock All on Page”, and to add 
+metadata like Keywords, page description etc. you’ll 
+need to right-click and select “Page Properties”.
+
+images used from : 
+
+http://pixabay.com/
+https://www.flickr.com/photos/astragony/
+
+If you have any quetions Send Me mail : http://themeforest.net/user/Muse-Master#contact
