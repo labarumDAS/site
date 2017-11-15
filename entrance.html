@@ -1,20 +1,24 @@
-<!DOCTYPE HTML>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <style>
-.after-box {
-    clear: left;
-    border: 3px solid red;
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
 }
 
-/* Style Header */
+body {
+  margin: 0;
+}
+
+/* Style the header */
 .header {
-    background-color: #F1F1F1;
-    text-align: center;
+    background-color: #f1f1f1;
     padding: 20px;
+    text-align: center;
 }
-
 
 /* Style the top navigation bar */
 .topnav {
@@ -37,55 +41,65 @@
     background-color: #ddd;
     color: black;
 }
-  </style>
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
 </head>
-
-
 <body>
 
-  <!Header>
-  <div class="header">
-      <h1>Knowvi 2.0</h1>
+<div class="header">
+  <h1>Knowvi 2.0</h1>
+  <p>Resize the browser window to see the responsive effect.</p>
+  <p>Login or Register on this page.</p>
+</div>
+
+<div class="topnav">
+  <a href="./home.html">Home</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    <form>
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname"><br>
+      Password:<br>
+      <input type="text" name="password">
+    </form>
   </div>
-
-  <div class="topnav">
-    <a href="#">Tutors</a>
-    <a href="#">Blog</a>
-    <a href="#">About</a>
-    <a href="./entrance.html">Portal</a>
-    <a href="./home.html">Home</a>
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
   </div>
-
-
-  <form>
-    First name:<br>
-    <input type="text" name="firstname"><br>
-    Last name:<br>
-    <input type="text" name="lastname"><br>
-    Password:<br>
-    <input type="text" name="password">
-  </form>
-
-
-<form action="welcome.php" method="post">
-Name: <input type="text" name="name"><br>
-E-mail: <input type="text" name="email"><br>
-Password: <input type="text" name="password"><br>
-<input type="submit">
-</form>
-
-<br> <br>
-
-<div class="after-box">Top Tutors Near You</div>
-
+  <div class="column">
+    <h2>Column</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+  </div>
+</div>
 
 </body>
 </html>
-
-
-<?php
-echo "<h2>PHP is Fun!</h2>";
-echo "Hello world!<br>";
-echo "I'm about to learn PHP!<br>";
-echo "This ", "string ", "was ", "made ", "with multiple parameters.";
-?>

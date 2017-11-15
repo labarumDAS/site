@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+.after-box {
+    clear: left;
+    border: 3px solid red;
+}
+
+/* Style Header */
+.header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+  </style>
+</head>
+
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+      <h1>Knowvi 2.0</h1>
+  </div>
+
+  <div class="topnav">
+    <a href="#">Tutors</a>
+    <a href="#">Blog</a>
+    <a href="#">About</a>
+    <a href="./entrance.html">Portal</a>
+    <a href="./home.html">Home</a>
+  </div>
+
+<br>
+
+<!-- Tutor Request Form HTML-->
+  <form>
+    Tutor's Name:<br>
+    <input type="text" name="tutorname"><br>
+    Subject:<br>
+    <input type="text" name="subject"><br>
+    Location:<br>
+    <input type="text" name="location"><br>
+    Date:<br>
+    <input type="text" date="date"><br>
+ </form>
+ <!-- End Tutor Request Form HTML-->
+
+ <br> <br>
+
+ <div class="after-box">Top Tutors Near You</div>
+
+<br> <br>
+
+<!-- Tutor Request Form PHP-->
+<form action="welcome.php" method="post">
+Name: <br>
+<input type="text" name="name"><br>
+E-mail:<br>
+<input type="text" name="email"><br>
+Password:<br>
+<input type="text" name="password"><br>
+<input type="submit">
+</form>
+
+<br> <br>
+
+<div class="after-box">Top is html, bottom is php</div>
+
+
+</body>
+</html>
