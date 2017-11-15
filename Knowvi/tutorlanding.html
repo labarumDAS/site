@@ -1,0 +1,120 @@
+<!-- https://blog.hubspot.com/marketing/fantastic-landing-page-examples -->
+<!-- http://www.landingfolio.com/gallery/application/verloop/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+/*--for columns --*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/*font */
+p {
+    font-family: "Arial", Arial, sans-serif;
+}
+
+/*floating box*/
+.floating-box {
+    float: left;
+    width: 215px;
+    height: 150px;
+    margin: 10px;
+    border: 3px solid #73AD21;
+}
+
+ /*background image*/
+  body {
+      background-image: url("./elephant.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  /* Create three unequal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+    width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+    width: 40%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+  /* Style the footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+ </style>
+</head>
+
+<body>
+
+
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<div class="row">
+  <div class="column side">
+    <div class="floating-box">
+      <h2> Apply Now </h2> Enter your info, and then download the Knowvi app
+      <br> to create your Tutor profile
+    </div>
+    <div id="Sign-Up">
+      <fieldset style="width:30%">
+        <legend>Registration Form</legend>
+        <table border="0"> <tr>
+          <form method="POST" action="connectivity-sign-up.php">
+            <td>Name</td><td> <input type="text" name="name"></td> </tr> <tr>
+            <td>Email</td><td> <input type="text" name="email"></td> </tr> <tr>
+            <td>UserName</td><td> <input type="text" name="user"></td> </tr> <tr>
+            <td>Password</td><td> <input type="password" name="pass"></td> </tr> <tr>
+            <td>Confirm Password </td><td><input type="password" name="cpass"></td> </tr> <tr>
+            <td><input id="button" type="submit" name="submit" value="Sign-Up"></td> </tr> </form>
+        </table>
+      </fieldset>
+    </div>
+  </div>
+  <div class="column middle">
+    <h2><p> Make up to $35/hr <br> Tutoring your favorite subject </p></h2>
+  </div>
+  <div class="column side">
+  <h1> <p> Knowvi 2.0 </p> </h1>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Footer</p>
+</div>
+
+</body>
+</html>
